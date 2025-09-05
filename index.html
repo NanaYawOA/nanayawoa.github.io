@@ -19,6 +19,18 @@
       padding: 40px 0;
     }
 
+    /* General section styling */
+    section {
+      padding: 20px 40px; /* nice spacing on desktop */
+    }
+    
+    /* Mobile fix */
+    @media screen and (max-width: 768px) {
+      section {
+        padding: 15px 20px; /* reduces but keeps breathing room */
+      }
+    }
+
     .about-text {
       flex: 1;
     }
