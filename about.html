@@ -5,29 +5,136 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Nana Yaw Ofori-Ampofo | Machine Learning</title>
   <link rel="stylesheet" href="style.css">
+  <style>
+    /* Timeline styles */
+    .timeline {
+      position: relative;
+      max-width: 800px;
+      margin: 50px auto;
+    }
+
+    .timeline::after {
+      content: '';
+      position: absolute;
+      width: 6px;
+      background-color: #0077b5;
+      top: 0;
+      bottom: 0;
+      left: 50%;
+      margin-left: -3px;
+    }
+
+    .timeline-item {
+      padding: 20px 30px;
+      position: relative;
+      background-color: inherit;
+      width: 50%;
+    }
+
+    .timeline-item::after {
+      content: '';
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      right: -10px;
+      background-color: #fff;
+      border: 3px solid #0077b5;
+      top: 20px;
+      border-radius: 50%;
+      z-index: 1;
+    }
+
+    .left {
+      left: 0;
+    }
+
+    .right {
+      left: 50%;
+    }
+
+    .left::after {
+      left: calc(100% - 10px);
+    }
+
+    .right::after {
+      left: -10px;
+    }
+
+    .timeline-content {
+      padding: 20px;
+      background-color: #f9f9f9;
+      position: relative;
+      border-radius: 6px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+
+    .timeline-content h3 {
+      margin-top: 0;
+      color: #0077b5;
+    }
+
+    @media screen and (max-width: 768px) {
+      .timeline::after {
+        left: 31px;
+      }
+
+      .timeline-item {
+        width: 100%;
+        padding-left: 70px;
+        padding-right: 25px;
+      }
+
+      .timeline-item::after {
+        left: 15px;
+      }
+
+      .right {
+        left: 0;
+      }
+    }
+  </style>
 </head>
 <body>
   <header>
     <h1>Nana Yaw Owusu Ofori-Ampofo</h1>
 
     <nav>
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="projects.html">Projects</a>
-    <a href="publications.html">Publications</a>
-    <a href="blog.html">Blog</a>
-    
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="projects.html">Projects</a>
+      <a href="publications.html">Publications</a>
+      <a href="blog.html">Blog</a>
     </nav>
-    
   </header>
-  <section>
-    <p>Grad student.</p>
 
-    <p>What i do</p>
+  <section>
+    <h2>My Journey</h2>
+    <div class="timeline">
+      <div class="timeline-item left">
+        <div class="timeline-content">
+          <h3>2012 – 2016</h3>
+          <p>BSc Electrical & Electronic Engineering, KNUST (First Class Honours).</p>
+        </div>
+      </div>
+
+      <div class="timeline-item right">
+        <div class="timeline-content">
+          <h3>2016 – 2023</h3>
+          <p>Senior Field Engineer at SLB, specializing in Artificial Lift systems across Sub-Saharan Africa.</p>
+        </div>
+      </div>
+
+      <div class="timeline-item left">
+        <div class="timeline-content">
+          <h3>2024 – Present</h3>
+          <p>Graduate Student (MEng Electrical Engineering), University of Calgary. Focus on Machine Learning, Reinforcement Learning, and Robotics.</p>
+        </div>
+      </div>
+    </div>
   </section>
-  
+
   <footer>
-  © 2025 Nana Yaw Ofori-Ampofo
+    © 2025 Nana Yaw Ofori-Ampofo
   </footer>
 </body>
 </html>
